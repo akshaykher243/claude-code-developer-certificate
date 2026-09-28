@@ -1,0 +1,3 @@
+# Private quiz, do not crawl or index anything.
+User-agent: *
+Disallow: /
