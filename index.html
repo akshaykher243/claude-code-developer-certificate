@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCDV-F Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Home -->
+  <section id="home" class="screen">
+    <h1>CCDV-F Practice Quiz</h1>
+    <p class="muted">Claude Certified Developer — Foundations</p>
+    <p class="muted">95 questions · single choice</p>
+    <button id="start-btn" class="btn primary">Start Quiz</button>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="screen hidden">
+    <div class="topbar">
+      <span id="progress">Question 1 of 95</span>
+      <span id="timer">00:00</span>
+    </div>
+
+    <p id="question-text" class="question"></p>
+    <div id="options" class="options"></div>
+
+    <div class="nav">
+      <button id="prev-btn" class="btn">Previous</button>
+      <button id="next-btn" class="btn primary">Next</button>
+      <button id="finish-btn" class="btn primary hidden">Finish</button>
+    </div>
+  </section>
+
+  <!-- Result -->
+  <section id="result" class="screen hidden">
+    <h1>Result</h1>
+    <p id="score" class="score"></p>
+    <p id="summary" class="muted"></p>
+
+    <h2 id="wrong-heading">Wrong Answers</h2>
+    <div id="wrong-list"></div>
+
+    <button id="restart-btn" class="btn primary">Restart Quiz</button>
+  </section>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
